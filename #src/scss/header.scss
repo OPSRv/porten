@@ -1,0 +1,58 @@
+.header {
+    position: fixed;
+    width: 100%;
+
+    background-color: #0f0f0f;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-self: center;
+    height: 5rem;
+    // @media (max-width: 768px) {
+       
+    //        background-color: purple;
+        
+    // }
+    .svg-Vector-dims { width: 20px; height: 14px; }
+	.svg-Vector-1-dims { width: 18px; height: 18px; }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        width: 50%;
+        .logo__font {
+            color: #fff;
+            font-family: PostNoBillsJaffna;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 54px;
+            text-transform: uppercase;
+        }
+    }
+    .nav__bar {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        .nav__list {
+            color: #fff;
+            display: flex;
+            list-style: none;
+            font-family: PTSans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 18px;
+            text-transform: uppercase;
+        }
+        .nav__list > li {
+            padding: 1.875em 1.25em 1.875em 1.25em;
+            &:hover {
+                background: #1F1F1F;
+            }
+        }
+    }
+}
+
+

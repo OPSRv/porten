@@ -1,0 +1,71 @@
+.section-collection {
+    display: flex;
+    flex-flow: row nowrap;
+    color: #fff;
+    font-family: PTSans;
+    max-width: 1920px;
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: center;
+    .collection-picture {
+        width: 50%;
+        height: 600px;
+        background: no-repeat url("../img/Rectangle9.png");
+        @media (max-width: 860px) {
+            width: 100%;
+            height: 600px;
+            background: no-repeat url("../img/Rectangle9.png") center;
+        }
+
+    }
+    .collection {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        width: 50%;
+        @media (max-width: 860px) {
+            width: 100%;
+            height: 600px;
+        }
+        .collection-header {
+            text-align: center;
+            text-transform: uppercase;
+            font-family: PTSans;
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 48px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            align-self: center;
+        }
+        .collection-text {
+            text-align: center;
+            text-transform: uppercase;
+            font-family: PTSans;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            align-self: center;
+            width: 70%;
+        }
+        .collection-catalog {
+            cursor: pointer;
+            border: 1px solid #fff;
+            padding: 5px;
+            height: 30px;
+            margin: 0 auto;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-self: center;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+}

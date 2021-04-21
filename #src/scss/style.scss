@@ -1,0 +1,39 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+    @font-face {
+        font-family: $font_name;
+        font-display: swap;
+        src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+        font-weight: #{$weight};
+        font-style: #{$style};
+    }
+}
+@import "normalize";
+@import "fonts";
+@import "header";
+@import "slider";
+@import "_aside-watch";
+@import "bootstrap-grid";
+@import "_aside-collection";
+@import "_aside-new-arrivals";
+@import "_aside-brand";
+@import "_footer";
+
+
+
+
+body {
+    background-color: #000;
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+}
+.main {
+    max-width: 1920px;
+
+    // border: 1px solid red;
+}
+    // div{
+    //     border: 1px solid red;
+    // }

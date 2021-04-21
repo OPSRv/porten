@@ -1,0 +1,41 @@
+.section-brand {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    color: #fff;
+    font-family: PTSans;
+    width: 100%;
+    background: #0f0f0f;
+    .collection {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        .collection-header {
+            text-align: center;
+            text-transform: uppercase;
+            font-family: PTSans;
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 48px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            align-self: center;
+        }
+        .logo__line-brand {
+            border: 1px solid #ffffff;
+            position: relative;
+            bottom: 30px;
+            width: 90px;
+        }
+        .brand-pictures {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            padding: 25px;
+        }
+    }
+}
